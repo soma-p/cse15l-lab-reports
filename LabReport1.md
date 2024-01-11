@@ -12,4 +12,5 @@ at the same working path, makes sense.
 I don't think the output (or the execution of the command) was an error because the cd command is intended to be used to move into
 a directory in the working path. I think it makes sense that the working path doesn't change when no additional arguments are given
 because the user doesn't specify which directory they want to go into.
+
 ---
