@@ -1,4 +1,5 @@
 # Lab Report 1 - Remote Access and FileSystem
+# "cd" Command:
 ---
 ## Example 1:
 ```
@@ -27,11 +28,30 @@ The output was not an error because the cd command acted as intended.
 
 ---
 
-## Example 3"
+## Example 3:
 ```
 #code block
 [user@sahara ~/lecture1]$ cd Hello.java
 bash: cd: Hello.java: Not a directory
+[user@sahara ~/lecture1]$ 
+```
+The working directory when the program was run was "/home/lecture1". "cd" is the command supposed to change your working directory, so it makes
+sense that an error message would be displayed if you're trying to cd into a file.
+
+The output was an error because the cd command stated that Hello.java was not a directory and ended up not doing anything. Furthermore, whenever
+the terminal says "bash:" followed by a message indicating an error!
+
+---
+
+# "ls" Command:
+
+---
+
+## Example 4:
+```
+#code block
+[user@sahara ~/lecture1]$ ls
+Hello.class  Hello.java  messages  README
 [user@sahara ~/lecture1]$ 
 ```
 The working directory when the program was run was "/home/lecture1". "cd" is the command supposed to change your working directory, so it makes
