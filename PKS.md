@@ -1,1 +1,6 @@
-Hello, my name is Pranav Kumar Soma, and people call me PKS because of my initials.
+# Bonjour à tous!
+## Je m'appelle Pranav Kumar Soma, et j'étude la science informatique dans L'Université De Californie: San Diego.
+
+Quelques gens qui me connaissent m'appelle avec le bon-nom **PKS** parce que ils sont mes initiels.
+
+Enchanté!!
