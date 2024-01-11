@@ -4,9 +4,11 @@
 ```
 #code block
 [user@sahara ~/lecture1/messages]$ cd
-[user@sahara ~]$ 
+[user@sahara ~]$
+
 [user@sahara ~/lecture1]$ cd
-[user@sahara ~]$ 
+[user@sahara ~]$
+
 [user@sahara ~]$ cd
 [user@sahara ~]$ 
 ```
@@ -17,3 +19,16 @@ I don't think the output (or the execution of the command) was an error because 
 because the user doesn't specify which directory they want to go into.
 
 ---
+
+## Example 2:
+```
+#code block
+[user@sahara ~]$ cd lecture1
+[user@sahara ~/lecture1]$
+
+[user@sahara ~/lecture1]$ cd messages
+[user@sahara ~/lecture1/messages]$
+
+[user@sahara ~]$ cd lecture1/messages
+[user@sahara ~/lecture1/messages]$ 
+```
