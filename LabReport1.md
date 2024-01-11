@@ -47,18 +47,44 @@ the terminal says "bash:" followed by a message indicating an error!
 
 ---
 
-## Example 4:
+## Example 1:
 ```
 #code block
 [user@sahara ~/lecture1]$ ls
 Hello.class  Hello.java  messages  README
 [user@sahara ~/lecture1]$ 
 ```
-The working directory when the program was run was "/home/lecture1". "cd" is the command supposed to change your working directory, so it makes
-sense that an error message would be displayed if you're trying to cd into a file.
+The working directory when the program was run was "/home/lecture1". "ls" is a command that lists out the elements in a directory, so it makes sense
+that it prints out the different files and directories in the working directory.
 
-The output was an error because the cd command stated that Hello.java was not a directory and ended up not doing anything. Furthermore, whenever
-the terminal says "bash:" followed by a message indicating an error!
+The output was not an error because the command performed as expected.
+
+---
+
+## Example 2:
+```
+#code block
+[user@sahara ~/lecture1]$ ls messages
+en-us.txt  es-mx.txt  fr.txt  zh-cn.txt
+[user@sahara ~/lecture1]$ 
+```
+The working directory when the program was run was "/home/lecture1". "ls" is a command that lists out the elements in a directory, so it makes sense
+it prints out the different files and directories in the specified directory in the working directory. When I ran "ls messages", it listed out the different elements in the messages directory.
+
+The output was not an error because the command performed as expected.
+
+---
+
+## Example 3:
+```
+#code block
+[user@sahara ~/lecture1]$ ls Hello.java
+Hello.java
+[user@sahara ~/lecture1]$ 
+```
+The working directory when the program was run was "/home/lecture1". "ls" is a command that lists out the elements in a directory, but when it's used with a file instead, it looks for the specified file.
+
+The output was not an error because the command performed as expected.
 
 ---
 
