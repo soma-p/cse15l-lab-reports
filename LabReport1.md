@@ -3,7 +3,6 @@
 ---
 ## Example 1:
 ```
-#code block
 [user@sahara ~/lecture1]$ cd
 [user@sahara ~]$
 ```
@@ -17,7 +16,6 @@ because the user doesn't specify which directory they want to go into.
 
 ## Example 2:
 ```
-#code block
 [user@sahara ~/lecture1]$ cd messages
 [user@sahara ~/lecture1/messages]$
 ```
@@ -30,7 +28,6 @@ The output was not an error because the cd command acted as intended.
 
 ## Example 3:
 ```
-#code block
 [user@sahara ~/lecture1]$ cd Hello.java
 bash: cd: Hello.java: Not a directory
 [user@sahara ~/lecture1]$ 
@@ -49,7 +46,6 @@ the terminal says "bash:" followed by a message indicating an error!
 
 ## Example 1:
 ```
-#code block
 [user@sahara ~/lecture1]$ ls
 Hello.class  Hello.java  messages  README
 [user@sahara ~/lecture1]$ 
@@ -63,7 +59,6 @@ The output was not an error because the command performed as expected.
 
 ## Example 2:
 ```
-#code block
 [user@sahara ~/lecture1]$ ls messages
 en-us.txt  es-mx.txt  fr.txt  zh-cn.txt
 [user@sahara ~/lecture1]$ 
@@ -77,7 +72,6 @@ The output was not an error because the command performed as expected.
 
 ## Example 3:
 ```
-#code block
 [user@sahara ~/lecture1]$ ls Hello.java
 Hello.java
 [user@sahara ~/lecture1]$ 
@@ -94,7 +88,6 @@ The output was not an error because the command performed as expected.
 
 ## Example 1:
 ```
-#code block
 [user@sahara ~/lecture1]$ cat
 
 
@@ -111,7 +104,6 @@ The output is an error because the command did not execute, and needed to be qui
 
 ## Example 2:
 ```
-#code block
 [user@sahara ~/lecture1]$ cat messages
 cat: messages: Is a directory
 [user@sahara ~/lecture1]$ 
@@ -124,7 +116,6 @@ The output is an error because of the output message, which says, "cat: messages
 
 ## Example 3:
 ```
-#code block
 [user@sahara ~/lecture1]$ cat Hello.java
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
