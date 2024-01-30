@@ -2,6 +2,7 @@
 Pranav Kumar Soma
 ---
 # Part 1
+## Code:
 ```
 ChatServer.java
 
@@ -41,6 +42,10 @@ public class ChatServer {
     }
 }
 ```
+## Usage 1 of /add-server
+![Image](First.png)
+## Usage 2 of /add-server
+![Image](Second.png) 
 ---
 # Part 2
 For this part, I decided to ls for my .ssh directory and then to cd into it. From there, I would use the realpath command to generate the absolute path \
