@@ -43,9 +43,9 @@ public class ChatServer {
 }
 ```
 ## Usage 1 of /add-server
-![Image](First.png)
+![Image](Second.png)
 ## Usage 2 of /add-server
-![Image](Second.png) 
+![Image](First.png) 
 ---
 # Part 2
 For this part, I decided to ls for my .ssh directory and then to cd into it. From there, I would use the realpath command to generate the absolute path \
