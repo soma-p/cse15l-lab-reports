@@ -62,15 +62,16 @@ of using split functions and adding the relevant formatting to update the chatHi
 
 Explanation:
 
-The add-server page is reloaded again this time with the query of "s=Second Screenshot&user=Pranav Soma". The host and path of the URI argument don't change,
-but the query does, and this change in query before reloading the page caused the page to be updated. The main variables in this program are still chatHistory
+The add-server page is reloaded again with the query "s=Second Screenshot&user=Pranav Soma." The host and path of the URI argument don't change,
+but the query does, and this change in the query before reloading the page caused the page to be updated. The main variables in this program are still chatHistory
 and URL.
 
 The ChatServer continued running on port 4000, which means that the data from the previous update is still stored in chatHistory, meaning that chatHistory before
 the update looked like "Enter Messages Below:\nPranav: HelloWorld\nPranav: HelloWorld\nPKS: Hi There!\n". However, once the page was reloaded with the new query,
-the url.getQuery() function retreived "s=Second Screenshot&user=Pranav Soma", and after formatting and extracting the relevant data, appended the string "Pranav Soma: Second Screenshot"
+the url.getQuery() function retreived "s=Second Screenshot&user=Pranav Soma", and after formatting and extracting the relevant data, appending the string "Pranav Soma: Second Screenshot\m"
 to the chatHistory field, which was then returned. Once it was returned, the ServerHttpHandler, which was created when the server was started, gets the data from the return
 value in the form of bytes, and proceeded to send that data to local along with a 200 message, indicating a successful transmission of data by the OutputStream. 
+
 ---
 # Part 2
 For this part, I decided to ls for my .ssh directory and then to cd into it. From there, I would use the realpath command to generate the absolute path \
