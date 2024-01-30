@@ -44,6 +44,20 @@ public class ChatServer {
 ```
 ## Usage 1 of /add-server
 ![Image](Second.png)
+
+Explanation:
+
+Whenever the add-server page is reloaded with the proper parameters, the handleRequest method in the Handler class is executed with the updated URI,
+which in this case is the "url" argument of type "URI," containing information like the current host, path, queries, and other relevant information
+about the URL.
+
+The ChatServer class started the port from the command line argument when the program was first run, and the Handler class contains the field called
+chatHistory, which starts with "Enter Messages Below:\n" every time the server starts. I used /add-server twice before this screenshot, so the field
+chatHistory contained the raw string "Enter Messages Below:\nPranav: HelloWorld\nPranav: HelloWorld\n". However, once the /add-server was entered
+with the queries in the screenshot, which was retrieved using the url.getQuery() function, containing "s=Hi There!&user=PKS", it was just a matter
+of using split functions and adding the relevant formatting to update the chatHistory field to look like: "Enter Messages Below:\nPranav: HelloWorld\nPranav: HelloWorld\n
+PKS: Hi There!\n". The updated chatHistory field then gets returned and printed out to the website.
+
 ## Usage 2 of /add-server
 ![Image](First.png) 
 ---
