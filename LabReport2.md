@@ -1,8 +1,20 @@
 # Lab Report 2 - Servers and SSH Keys
+Pranav Kumar Soma
 ---
 # Part 1
 ---
 # Part 2
+For this part, I decided to ls for my .ssh directory and then to cd into it. From there, I would use the realpath command to generate the absolute path \
+for the files for which I needed the absolute paths. Initially, I was unsure as to what the authorized_keys file was doing in my server when I expected id_rsa.pub, 
+but a quick google search showed me that the authorized_keys file contained the public key, which was what I wanted. 
+
+## Absolute Path for Private Key in Local
+![Image][Public Key Absolute Path.png]
+## Absolute Path for Public Key in Server
+![Image][Private Key Absolute Path.png]
+## Proof of Logging into Server without the use of a Password
+![Image][SSH Without Password.png]
+
 ---
 # Part 3
 
