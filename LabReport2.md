@@ -79,9 +79,9 @@ for the files for which I needed the absolute paths. Initially, I was unsure as 
 but a quick google search showed me that the authorized_keys file contained the public key, which was what I wanted. 
 
 ## Absolute Path for Private Key in Local
-![Image](PublicKey.png) 
-## Absolute Path for Public Key in Server
 ![Image](PrivateKey.png)
+## Absolute Path for Public Key in Server
+![Image](PublicKey.png)
 ## Proof of Logging into Server without the use of a Password
 ![Image](SSH.png)
 
