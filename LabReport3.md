@@ -354,8 +354,7 @@ pranavsoma@MacBook-Pro-9 technical % grep  -m 3 "base pair" ./biomed/1471-2164-3
           correspond to sequence length in base pairs better than
 ```
 I added ```-m 3``` to ```grep "base pair" ./biomed/1471-2164-3-7.txt``` to get the first three occurrences of the phrase "base pair" in the file 
-technical/biomed/1471-2164-3-7.txt. This would be useful if analyzing research papers, because research papers usually start with the abstract, and seeing the lines in
-which a certain keyword is mentioned allows us to see how useful said paper is to our purposes. 
+```technical/biomed/1471-2164-3-7.txt```. This would be useful if analyzing research papers, because research papers usually start with the abstract, and seeing the lines in which a certain keyword is mentioned allows us to see how useful said paper is to our purposes. 
 
 Side Note: I think it's very fascinating how all of these commands can be used together
 to perform more complex actions and curate the output to our needs.
