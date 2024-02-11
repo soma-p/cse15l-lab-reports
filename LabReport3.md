@@ -300,8 +300,65 @@ the word "gene" isn't mentioned may mean that those files need to be deleted or 
 ### Usage 4: grep -m <pattern> <files>
 
 Example 1:
+```
+pranavsoma@MacBook-Pro-9 technical % grep -r "citizens" ./government -m 1
+./government/About_LSC/Special_report_to_congress.txt:of low-income citizens solve important, sometimes life-threatening,
+./government/About_LSC/commission_report.txt:citizens. (The report refers to these classes as "unrestricted
+./government/About_LSC/ONTARIO_LEGAL_AID_SERIES.txt:low-income citizens solve important, sometimes life-threatening,
+./government/About_LSC/diversity_priorities.txt:The client community has changed. Women, senior citizens
+./government/About_LSC/reporting_system.txt:citizens. It equips people to handle simple matters themselves,
+./government/About_LSC/State_Planning_Report.txt:serves senior citizens; the Equal Justice Foundation, which
+./government/About_LSC/State_Planning_Special_Report.txt:Corporation. LSC has helped millions of low-income citizens solve
+./government/Env_Prot_Agen/final.txt:control equipment. It also assures citizens who live near new major
+./government/Env_Prot_Agen/tech_adden.txt:of mortality risk reductions expressed by citizens in the United
+./government/Gen_Account_Office/d0269g.txt:available to all Australian citizens. From 1999 through 2000, HIC
+./government/Gen_Account_Office/Testimony_cg00010t.txt:Support the Transition to a American citizens are increasingly
+./government/Gen_Account_Office/GovernmentAuditingStandards_yb2002ed.txt:citizens. In addition to an interest in the program, potential
+./government/Gen_Account_Office/d01376g.txt:implementations of IT that benefit citizens, leadership in managing
+./government/Gen_Account_Office/Statements_Feb28-1997_volume.txt:make a profit but to serve the needs of the citizens and to promote
+./government/Gen_Account_Office/pe1019.txt:set of standard income tax questions about which citizens typically
+./government/Gen_Account_Office/gg96118.txt:or to address differing conditions and citizens' needs that have
+./government/Gen_Account_Office/og96038.txt:businesses within the State and protect the health of its citizens;
+./government/Gen_Account_Office/Sept14-2002_d011070.txt:positions that interact with citizens.2 Effective workforce
+./government/Gen_Account_Office/June30-2000_gg00135r.txt:all state agencies to selectively notify citizens of opportunities
+./government/Gen_Account_Office/d01591sp.txt:capital. In contrast, citizens, companies, and governments in an
+./government/Gen_Account_Office/og97041.txt:citizens, 5 from other federal agencies, 60 from state agencies,
+./government/Gen_Account_Office/og96026.txt:labor unions, and 31 private citizens. This rule reflects EPA's
+./government/Gen_Account_Office/Testimony_Jul17-2002_d02957t.txt:the nation's ability to protect its borders and citizens against
+./government/Post_Rate_Comm/Cohenetal_comparison.txt:citizens throughout the nation. Without the monopoly, they argue,
+./government/Media/highlight_Senior_Day.txt:We also can agree that older Oklahomans - like all citizens -
+./government/Media/Supporting_Legal_Center.txt:efforts for equal access to justice for all of Utah's citizens. The
+./government/Media/Barnes_new_job.txt:18,000 homeowners -- many of them senior citizens -- with its
+./government/Media/Annual_Fee.txt:their ability, thereby assisting the citizens of Illinois," Sheila
+./government/Media/Eviction_law.txt:The case was brought by four Oakland, Calif., senior citizens,
+./government/Media/Volunteers_Step_Up.txt:the safety of our citizens. Even within the new and frightening
+./government/Media/IOLTA_INTEREST_RATE.txt:the most vulnerable citizens of the state, can only represent, at
+./government/Media/Self-Help_Website.txt:"There are now just over 1 million poor citizens in Ohio who
+./government/Media/Firm_to_the_Poor_Needs_Help.txt:citizens.
+./government/Media/Civil_Matters.txt:When indigent citizens get in criminal trouble, public defenders
+./government/Media/man_on_national_team.txt:work on behalf of poor citizens who are requesting legal
+./government/Media/BusinessWire.txt:state and federal courts. LAD services more than 15,000 citizens
+./government/Media/Attorney_gives_his_time.txt:senior citizens with their legal needs, free of charge.
+./government/Media/GreensburgDailyNews.txt:citizens not just the rich."
+./government/Media/Understanding.txt:a senior citizens facility.
+./government/Media/Politician_Practices.txt:American. Some shine best as citizens.
+```
+I added ```-m 1``` to one of the commands used previously in this document, ```grep -r "citizens" ./government``` to limit the number of occurrences of "citizens" in the ```technical/government``` directory printed per file to 1. This makes it helpful if you're looking for the first occurrence of "citizen" per file or if you just don't want to be clogged with too much text on your terminal.
 
 Example 2:
+
+```
+pranavsoma@MacBook-Pro-9 technical % grep  -m 3 "base pair" ./biomed/1471-2164-3-7.txt 
+          the detection window of 45 to 900 base pairs and
+          increasing numbers of base pairs: NewHeight =
+          correspond to sequence length in base pairs better than
+```
+I added ```-m 3``` to ```grep "base pair" ./biomed/1471-2164-3-7.txt``` to get the first three occurrences of the phrase "base pair" in the file 
+technical/biomed/1471-2164-3-7.txt. This would be useful if analyzing research papers, because research papers usually start with the abstract, and seeing the lines in
+which a certain keyword is mentioned allows us to see how useful said paper is to our purposes. 
+
+Side Note: I think it's very fascinating how all of these commands can be used together
+to perform more complex actions and curate the output to our needs.
 
 ---
 
