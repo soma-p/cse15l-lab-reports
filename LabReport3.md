@@ -48,9 +48,13 @@ public class ArrayTests {
 ```
 ### Symptom:
 Symptom for the first test:
+
 ![Image](Fail.png)
+
 Symptom for the second test:
+
 ![Image](Success.png)
+
 ### The Bug:
 
 Code Before:
