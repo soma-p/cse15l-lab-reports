@@ -90,7 +90,7 @@ of the input array are lost.
 
 ## Part 2 - Researching Commands
 
-Command Selected: ```find```
+Command Selected: ```grep```
 
 ### Usage 1:
 
