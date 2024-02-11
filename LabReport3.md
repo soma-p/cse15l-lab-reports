@@ -92,25 +92,25 @@ of the input array are lost.
 
 Command Selected: ```grep```
 
-### Usage 1:
+### Usage 1: grep -i <pattern> <files>
 
 Example 1:
 
 Example 2:
 
-### Usage 2:
+### Usage 2: grep -L <pattern> <files>
 
 Example 1:
 
 Example 2:
 
-### Usage 3:
+### Usage 3: grep -r <pattern> <files>
 
 Example 1:
 
 Example 2:
 
-### Usage 4: 
+### Usage 4: grep -m <pattern> <files>
 
 Example 1:
 
@@ -119,4 +119,7 @@ Example 2:
 ---
 
 ## Sources Cited:
+
+*grep(1) - Linux manual page.* (2023). Man7.org. https://man7.org/linux/man-pages/man1/grep.1.html
+‌
 
