@@ -25,9 +25,9 @@ import org.junit.*;
 public class ArrayTests {
 	@Test 
 	public void testReverseInPlace() {
-    int[] input1 = {1, 2, 3, 4, 5 };
-    ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(new int[]{5, 4, 3, 2, 1}, input1);
+		int[] input1 = {1, 2, 3, 4, 5 };
+		ArrayExamples.reverseInPlace(input1);
+		assertArrayEquals(new int[]{5, 4, 3, 2, 1}, input1);
 	}
 }
 ```
@@ -38,11 +38,11 @@ import static org.junit.Assert.*;
 import org.junit.*;
 
 public class ArrayTests {
-	@Test 
+	@Test
 	public void testReverseInPlace() {
-    int[] input1 = { 3 };
-    ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(new int[]{ 3 }, input1);
+		int[] input1 = { 3 };
+		ArrayExamples.reverseInPlace(input1);
+		assertArrayEquals(new int[]{ 3 }, input1);
 	}
 }
 ```
@@ -56,19 +56,19 @@ Symptom for the second test:
 Code Before:
 ```
 static void reverseInPlace(int[] arr) {
-  for(int i = 0; i < arr.length; i += 1) {
-    arr[i] = arr[arr.length - i - 1];
-  }
+	for(int i = 0; i < arr.length; i += 1) {
+		arr[i] = arr[arr.length - i - 1];
+	}
 }
 ```
 Code After:
 ```
 static void reverseInPlace(int[] arr) {
-  for(int i = 0; i < arr.length/2; i++) {
-    int temp = arr[arr.length - i - 1];
-    arr[arr.length-i-1] = arr[i];
-    arr[i] = temp;
-  }
+	for(int i = 0; i < arr.length/2; i++) {
+		int temp = arr[arr.length - i - 1];
+		arr[arr.length-i-1] = arr[i];
+		arr[i] = temp;
+	}
 }
 ```
 Brief Description of the Bug and Fix:
