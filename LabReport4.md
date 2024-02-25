@@ -12,7 +12,7 @@
 
 I used the basic ```ssh``` command to establish a remote connection with an ieng6 computer.
 
-```ssh prsoma@ieng6.ucsd.edu```
+![Image](Step4.png) 
 
 *Insert image here*
 
@@ -22,7 +22,7 @@ I used the ```git clone``` command combined with SSH URL I obtained from the for
 
 ```git clone git@github.com:soma-p/lab7.git```
 
-*Insert image here*
+![Image](Step5.png)
 
 ### Step 6 - Running the tests, demonstrating that they fail
 
@@ -37,7 +37,7 @@ Then, I ran the bash script ```test.sh``` to compile and run the tester file.
 
 ```bash test.sh```
 
-*Insert image here*
+![Image](Step6.png)
 
 ### Step 7 - Editing the code file to fix the failing test
 
@@ -45,7 +45,7 @@ To edit the code file, I used the ```vim``` command to enter the IDE, opening th
 
 ```vim ListExamples.java```
 
-*insert image here*
+![Image](Step7.png)
 
 From there, I entered the following commands successively: ```6k``` ```e``` ```r2``` ```:wq<enter>```
 
@@ -61,7 +61,7 @@ I ran the bash script ```test.sh``` to compile and run the tester file, displayi
 
 ```bash test.sh```
 
-*insert image here*
+![Image](Step8.png)
 
 ### Step 9 - Committing and pushing the resulting change to your Github account (you can pick any commit message!)
 
@@ -70,5 +70,5 @@ to my local repository. I then used the ```git commit -m "This is my message!"``
 without having to enter the vim IDE for the commit message. However, the command line didn't accept "!" as a valid character, so I had to change my message slightly
 to ```git commit -m "This is my message"```. Lastly, I used ```git push``` to push my committed code to the remote repository.
 
-*insert image here*
+![Image](Step9.png)
 
