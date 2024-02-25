@@ -61,7 +61,7 @@ I ran the bash script ```test.sh``` to compile and run the tester file, displayi
 
 ```bash test.sh```
 
-![Image](Step8.png)
+![Image](Step9.png)
 
 ### Step 9 - Committing and pushing the resulting change to your Github account (you can pick any commit message!)
 
@@ -70,5 +70,5 @@ to my local repository. I then used the ```git commit -m "This is my message!"``
 without having to enter the vim IDE for the commit message. However, the command line didn't accept "!" as a valid character, so I had to change my message slightly
 to ```git commit -m "This is my message"```. Lastly, I used ```git push``` to push my committed code to the remote repository.
 
-![Image](Step9.png)
+![Image](Step8.png)
 
