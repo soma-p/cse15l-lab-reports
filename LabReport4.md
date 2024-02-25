@@ -63,7 +63,7 @@ I ran the bash script ```test.sh``` to compile and run the tester file, displayi
 
 ![Image](Step9.png)
 
-### Step 9 - Committing and pushing the resulting change to your Github account
+### Step 9 - Committing and pushing the resulting change to my Github account
 
 I chose to first use ```git status``` to check my status of the repository, and then used the ```add --all``` command to add all of my changes
 to my local repository. I then used the ```git commit -m "This is my message!"``` to commit these changes to my local repositorry
