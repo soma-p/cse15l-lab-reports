@@ -94,14 +94,14 @@ bash test.sh
 What to Do to Fix the Bug:
 To fix the bug, add a line to the ```fibonacci(int n)``` in ```Fibonacci.java``` that says:
 ```
-if(n == 0) return 0;
+if(n <= 0) return 0;
 ```
 
 The resulting file should look like:
 ```
 public class Fibonacci {
     public static int fibonacci(int n) {
-        if (n == 0)
+        if (n <= 0)
             return 0;
         if (n == 1)
             return 1;
