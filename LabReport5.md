@@ -14,11 +14,11 @@ at this point, the numbers 0 and 1 need to be returned, respectively; the other 
 However, when I run the tests using the ```test.sh``` script from class, modifying it to include the name of my tester class, I get a very weird output value that says both my tests failed. Here's
 the output for reference:
 
-*insert image here*
+![Image](FailedTest.png)
 
 Furthermore, here's my ```Fibonacci.java``` final:
 
-*insert image here*
+![Image](Fib.png)
 
 ### TA Response:
 Hi!
@@ -34,7 +34,7 @@ an infinite loop, which is why I got that error message so many times! Maybe, al
 
 Here's a picture of what JDB showed me:
 
-*insert image here*
+![Image](JDB.png)
 
 
 ### Setup:
